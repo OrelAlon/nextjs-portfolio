@@ -13,7 +13,7 @@ const PageTransition = ({children}) => {
     <motion.div
     initial={{opacity:1}}
     animate={{
-        opacity:1,
+        opacity:0,
         transition:{delay:1,duration:0.4,ease:'easeInOut'}
     }}
     className="
