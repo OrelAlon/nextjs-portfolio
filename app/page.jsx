@@ -8,10 +8,10 @@ const Home = () => {
 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
       
       {/* text */}
-        <div> 
+        <div className='text-center xl:text-left'>  
           <span>Web Developer</span>
-          <h1>Hello I'm <br /><span>Orel Alon</span></h1>
-
+          <h1 className='h1'> Hello I'm <br /><span className='text-xl'>Orel Alon</span></h1>
+        <p>I need to add somthing here</p>
         </div>
         {/* photo */}
         <div> photo</div>
