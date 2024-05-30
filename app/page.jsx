@@ -33,7 +33,8 @@ const Home = () => {
       </div>
        
 
-       <div className='order-1 xl:order-none mb-8 xl:mb-0'>       <Photo/>
+       <div className='order-1 xl:order-none mb-8 xl:mb-0'>
+               <Photo/>
 
 </div>
        </div>
@@ -41,6 +42,10 @@ const Home = () => {
         </div>
         {/* photo */}
 
+
+{/* test */}
+<div>
+</div>
     </section>
   )
 }
