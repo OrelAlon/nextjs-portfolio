@@ -124,27 +124,36 @@ const skills = {
 
 const Resume = () => {
   return (
-    <div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
-        }}
-        className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
-      />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+      }}
+      className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
+    >
       <div className='container mx-auto'>
-        <Tabs>
-          <TabsList>
-            <TabsTrigger>Experience</TabsTrigger>
-            <TabsTrigger>Education</TabsTrigger>
-            <TabsTrigger>Skills</TabsTrigger>
-            <TabsTrigger>About Me</TabsTrigger>
+        <Tabs
+          defaultValue='experience'
+          className='flex flex-col xl:flex-row gap-[60px]'
+        >
+          <TabsList className='flex flex-col w-full max-w[380px] mx-auto xl:mx-0 gap-6'>
+            <TabsTrigger value='experience'>Experience</TabsTrigger>
+            <TabsTrigger value='education'>Education</TabsTrigger>
+            <TabsTrigger value='skills'>Skills</TabsTrigger>
+            <TabsTrigger value='about'>About Me</TabsTrigger>
           </TabsList>
+          <div className='min-h-[70vh] w-full'>
+            <TabsContent value='experience' className='w-full'>
+              experience
+            </TabsContent>
+            <TabsContent value='experience' className='w-full'></TabsContent>
+            <TabsContent value='experience' className='w-full'></TabsContent>
+            <TabsContent value='experience' className='w-full'></TabsContent>
+          </div>
         </Tabs>
       </div>
-      resume
-    </div>
+    </motion.div>
   );
 };
 
