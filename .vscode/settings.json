@@ -1,25 +1,6 @@
-{
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-    "editor.formatOnType": false, // required
-    "editor.formatOnPaste": true, // optional
-    "editor.formatOnSave": true, // optional
-    "editor.formatOnSaveMode": "file", // required to format on save
-    "files.autoSave": "onFocusChange", // optional but recommended
-    "vs-code-prettier-eslint.prettierLast": false,
-    "workbench.colorCustomizations": {
-      "activityBar.background": "#222",
-      "activityBar.activeBackground": "#444",
-      "activityBarBadge.foreground": "#222",
-      "titleBar.activeBackground": "#222",
-      "titleBar.inactiveForeground": "#222",
-      "statusBar.foreground": "#222",
-      "activityBar.activeBorder": "#F7CAC9",
-      "activityBar.foreground": "#F7CAC9",
-      "activityBar.inactiveForeground": "#F7CAC9",
-      "activityBarBadge.background": "#F7CAC9",
-      "titleBar.inactiveBackground": "#F7CAC9",
-      "titleBar.activeForeground": "#F7CAC9",
-      "statusBar.background": "#F7CAC9",
-      "statusBarItem.hoverBackground": "#F7CAC9"
-    } // set as "true" to run 'prettier' last not first
-  }
+
+
+  {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
