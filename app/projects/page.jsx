@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 import {
   Tooltip,
@@ -49,6 +51,7 @@ const projects = [
 ];
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -58,9 +61,8 @@ const Projects = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
           <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
-            text
-            <div>
-              <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
+            <div className='flex flex-col gap-[20px]'>
+              <div className='text-8xl leading-none font-extrabold  text-outline'>
                 {project.num}
               </div>
               <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
