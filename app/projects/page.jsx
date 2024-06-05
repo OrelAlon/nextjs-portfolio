@@ -52,6 +52,11 @@ const projects = [
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
 
+  const handleSlideChange = (swiper) => {
+    const currentIndex = swiper.activeIndex;
+    setProject(projects[currentIndex]);
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -61,7 +66,7 @@ const Projects = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
           <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
-            <div className='flex flex-col gap-[20px]'>
+            <div className='flex flex-col gap-[20px] h-[50%]'>
               <div className='text-8xl leading-none font-extrabold  text-outline'>
                 {project.num}
               </div>
@@ -111,8 +116,34 @@ const Projects = () => {
                   </TooltipProvider>
                 </Link>
               </div>
-              <div className='w-full xl:w-[50%]'>slider</div>
             </div>
+          </div>
+          <div className='w-full xl:w-[50%]'>
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              className='xl:h-[520px] mb-12'
+              onSlideChange={handleSlideChange}
+            >
+              {projects.map((project, index) => {
+                return (
+                  <SwiperSlide key={index} className='w-full'>
+                    <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
+                      <div></div>
+                      <div className='relative w-full h-full '>
+                        <Image
+                          src={project.image}
+                          fill
+                          className='object-cover'
+                          alt=''
+                        ></Image>
+                      </div>
+                    </div>
+                    slide
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
       </div>
