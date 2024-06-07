@@ -1,5 +1,8 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { FiDownload } from 'react-icons/fi';
+import { TypeAnimation } from 'react-type-animation';
 
 // components
 import Social from '@/components/Social';
@@ -12,16 +15,30 @@ const Home = () => {
         <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
           {/* text */}
           <div className='text-center xl:text-left order-2 xl:order-none'>
-            <span className='text-xl'>Web Developer</span>
+            {/* <span className='text-xl'>Web Developer</span> */}
             <h1 className='h1 mb-6'>
               {' '}
               Hello I'm <br />
               <span className='text-accent'>Orel Alon</span>
             </h1>
+
+            <TypeAnimation
+              className='text-xl'
+              sequence={[
+                'Web Developer',
+                1000,
+                'Mobile Developer',
+                1000,
+                'project manager',
+                1000,
+              ]}
+              wrapper='span'
+              speed={25}
+              repeat={Infinity}
+            />
             <p className='max-w-[500px] mb-9 text-white/80'>
               I need to add somthing here
             </p>
-
             <div className='flex flex-col xl:flex-row items-center gap-8'>
               <Button
                 variant='outline'
