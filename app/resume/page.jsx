@@ -64,18 +64,17 @@ const experience = {
 const education = {
   icon: '/assets/rsume/badge.svg',
   title: 'My Education',
-  description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, illum excepturi.',
+  description: 'Continuously learning and evolving.',
   items: [
     {
-      institution: 'fill it',
-      degree: 'fill it',
-      duration: 'fillit',
+      institution: 'Max Stern Yezreel Valley College',
+      degree: 'BA',
+      duration: 'Economics and Finance',
     },
     {
-      institution: 'fill it',
-      degree: 'fill it',
-      duration: 'fillit',
+      institution: 'AppleSeeds Academy',
+      degree: 'Full Stack Developer Bootcamp',
+      duration: '740 hours training program',
     },
   ],
 };
@@ -193,11 +192,11 @@ const Resume = () => {
                         >
                           <span className='text-accent'>{item.duration}</span>
                           <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>
-                            {item.position}
+                            {item.degree}
                           </h3>
                           <div className='flex items-center gap-3'>
                             <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
-                            <p className='text-white/60'>{item.company}</p>
+                            <p className='text-white/60'>{item.institution}</p>
                           </div>
                         </li>
                       );
