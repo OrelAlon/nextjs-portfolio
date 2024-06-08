@@ -67,14 +67,14 @@ const education = {
   description: 'Continuously learning and evolving.',
   items: [
     {
-      institution: 'Max Stern Yezreel Valley College',
+      institution: 'Max Stern Yezreel',
       degree: 'BA',
       duration: 'Economics and Finance',
     },
     {
       institution: 'AppleSeeds Academy',
       degree: 'Full Stack Developer Bootcamp',
-      duration: '740 hours training program',
+      duration: '740 hours program',
     },
   ],
 };
@@ -188,15 +188,17 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'
+                          className='bg-[#232329] h-[184px] py-6 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'
                         >
-                          <span className='text-accent'>{item.duration}</span>
-                          <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>
+                          <span className='text-accent'>
+                            {item.institution}
+                          </span>
+                          <h5 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>
                             {item.degree}
-                          </h3>
+                          </h5>
                           <div className='flex items-center gap-3'>
                             <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
-                            <p className='text-white/60'>{item.institution}</p>
+                            <p className='text-white/60'>{item.duration}</p>
                           </div>
                         </li>
                       );
