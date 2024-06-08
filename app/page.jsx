@@ -29,7 +29,7 @@ const Home = () => {
                 1000,
                 'Mobile Developer',
                 1000,
-                'project manager',
+                'Project Manager',
                 1000,
               ]}
               wrapper='span'
@@ -37,17 +37,23 @@ const Home = () => {
               repeat={Infinity}
             />
             <p className='max-w-[500px] mb-9 text-white/80'>
-              I need to add somthing here
+              I need to add something here
             </p>
             <div className='flex flex-col xl:flex-row items-center gap-8'>
-              <Button
-                variant='outline'
-                size='lg'
-                className=' flex items-center gap-2'
+              <a
+                target='_blank'
+                href='https://drive.google.com/file/d/17wGx6-20Xu02v4S87wu4nHbAHufuNVzd/view?usp=sharing'
+                download
               >
-                <span>Download CV</span>
-                <FiDownload className='text-xl' />
-              </Button>
+                <Button
+                  variant='outline'
+                  size='lg'
+                  className='flex items-center gap-2'
+                >
+                  <span>Download CV</span>
+                  <FiDownload className='text-xl' />
+                </Button>
+              </a>
               <div className='mb-8 xl:mb-0'>
                 <Social
                   containerStyles='flex gap-6'

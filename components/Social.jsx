@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedinIn, FaPhone, FaMailBulk } from 'react-icons/fa';
 const socials = [
   { icon: <FaGithub />, path: 'https://github.com/OrelAlon' },
   { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/orel-alon/' },
-  { icon: <FaPhone />, path: 'tel:0526707895' },
-  { icon: <FaMailBulk />, path: 'mailto:orel.alon.dev@gmail.com' },
+  // { icon: <FaPhone />, path: 'tel:0526707895' },
+  // { icon: <FaMailBulk />, path: 'mailto:orel.alon.dev@gmail.com' },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
