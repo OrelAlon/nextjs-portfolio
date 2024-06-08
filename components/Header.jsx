@@ -17,7 +17,10 @@ const Header = () => {
         <div className='hidden xl:flex items-center gap-8'>
           {' '}
           <Nav />
-          <Link href='/cv'>
+          <Link
+            target='_blank'
+            href='https://drive.google.com/file/d/17wGx6-20Xu02v4S87wu4nHbAHufuNVzd/view?usp=sharing'
+          >
             <Button>CV</Button>
           </Link>
         </div>

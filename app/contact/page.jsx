@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Buttonutton } from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
@@ -21,8 +21,9 @@ const info = [
   },
   {
     icon: <FaLinkedin />,
-    title: 'Linkedin',
+    title: 'LinkedIn',
     des: 'orel-alon',
+    url: 'https://www.linkedin.com/in/orel-alon/', // Add your LinkedIn profile URL here
   },
 ];
 
@@ -41,17 +42,12 @@ const Contact = () => {
           <div className='xl:w-[54%] order-2 xl:order-none'>
             <form className='flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'>
               <h3 className='text-4xl text-accent'>Let's work together</h3>
-              <p className='text-white/60'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit est nesciunt et magni at. Saepe tenetur aliquid
-                voluptas quis consectetur illo, aspernatur iusto eos, officia
-                quos corrupti facere in. Laboriosam.
-              </p>
+              {/* <p className='text-white/60'>I DONT KNOW WHAT TO SAY</p> */}
               <div className='grid grid-cols-1 md:grid-cols gap-6'>
-                <Input type='firstname' placeholder='Firstname' />
-                <Input type='lastname' placeholder='Lastname' />
-                <Input type='email' placeholder='Email asddress' />
-                <Input type='phone' placeholder='Phone number' />
+                <Input type='firstname' placeholder='First Name' />
+                <Input type='lastname' placeholder='Last Name' />
+                <Input type='email' placeholder='Email Address' />
+                <Input type='phone' placeholder='Phone Number' />
               </div>
 
               <Textarea
@@ -63,7 +59,7 @@ const Contact = () => {
               </Button>
             </form>
           </div>
-          <div className='flex-1 flex items-center xl-justify-end order-1 xl:order-none mb-8 xl:mb-0'>
+          <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>
             <ul className='flex flex-col gap-10'>
               {info.map((item, index) => {
                 return (
@@ -73,7 +69,20 @@ const Contact = () => {
                     </div>
                     <div className='flex-1'>
                       <p className='text-white/60'>{item.title}</p>
-                      <h3 className='text-xl'>{item.des}</h3>
+                      <h3 className='text-xl'>
+                        {item.url ? (
+                          <a
+                            href={item.url}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-accent hover:underline'
+                          >
+                            {item.des}
+                          </a>
+                        ) : (
+                          item.des
+                        )}
+                      </h3>
                     </div>
                   </li>
                 );

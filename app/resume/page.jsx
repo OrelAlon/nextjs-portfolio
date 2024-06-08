@@ -38,12 +38,12 @@ const experience = {
     'Transforms design concepts into efficient code, ensuring top-notch user experience.',
   items: [
     {
-      company: 'Rotem Consulting & Investment',
+      company: 'Rotem Consulting',
       position: 'Project Manager',
       duration: '2023 - 2024',
     },
     {
-      company: 'Junex - software company',
+      company: 'Junex ',
       position: 'Full-Stack',
       duration: '2022 - 2023',
     },
@@ -82,8 +82,7 @@ const education = {
 // skills data
 const skills = {
   title: 'My Skills',
-  description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, illum excepturi.',
+  description: '',
   skillsList: [
     {
       icon: <FaHtml5 />,
