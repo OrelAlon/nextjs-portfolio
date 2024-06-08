@@ -37,7 +37,7 @@ const Home = () => {
               repeat={Infinity}
             />
             <p className='max-w-[500px] mb-9 text-white/80'>
-              I need to add something here
+              {/* I need to add something here */}
             </p>
             <div className='flex flex-col xl:flex-row items-center gap-8'>
               <a

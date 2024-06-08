@@ -35,27 +35,27 @@ const experience = {
   icon: '/assets/rsume/badge.svg',
   title: 'My Experience',
   description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, illum excepturi.',
+    'Transforms design concepts into efficient code, ensuring top-notch user experience.',
   items: [
     {
-      company: 'fill it',
-      position: 'fill it',
-      duration: 'fillit',
+      company: 'Rotem Consulting & Investment',
+      position: 'Project Manager',
+      duration: '2023 - 2024',
     },
     {
-      company: 'fill it',
-      position: 'fill it',
-      duration: 'fillit',
+      company: 'Junex - software company',
+      position: 'Full-Stack',
+      duration: '2022 - 2023',
     },
     {
-      company: 'fill it',
-      position: 'fill it',
-      duration: 'fillit',
+      company: 'AppleSeed - Intern',
+      position: 'Front-End',
+      duration: '2021',
     },
     {
-      company: 'fill it',
-      position: 'fill it',
-      duration: 'fillit',
+      company: 'Shemen Industries Ltd',
+      position: 'Economist',
+      duration: '2019 - 2021',
     },
   ],
 };
