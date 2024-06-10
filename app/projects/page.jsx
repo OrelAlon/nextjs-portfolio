@@ -16,7 +16,8 @@ import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import foodbook from '../../public/img/foodbook.jpeg';
+import foodbook from '../../public/img/foodbook3.jpeg';
+import nut from '../../public/img/nut-app.png';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
 
 const projects = [
@@ -34,12 +35,12 @@ const projects = [
   {
     num: '02',
     category: 'frontend',
-    title: 'project 2',
-    description: 'sdxbn cehdcnsujcnasz cujhcn sujnxn jns',
+    title: 'nutrition-tracking',
+    description: 'nutrition track of everything you ate',
     stack: [{ name: 'Html' }, { name: 'Css' }, { name: 'JavaScript' }],
-    image: '/',
-    live: '',
-    github: '',
+    image: nut,
+    live: 'https://nutrition-tracking-app.netlify.app/',
+    github: 'https://github.com/OrelAlon/nutrition-app',
   },
   {
     num: '03',
