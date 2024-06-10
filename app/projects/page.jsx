@@ -16,18 +16,20 @@ import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import foodbook from '../../public/img/foodbook.jpeg';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
 
 const projects = [
   {
     num: '01',
-    category: 'frontend',
-    title: 'project 1',
-    description: 'sdxbn cehdcnsujcnasz cujhcn sujnxn jns',
-    stack: [{ name: 'Html' }, { name: 'Css' }, { name: 'JavaScript' }],
-    image: '/',
-    live: '',
-    github: '',
+    category: 'Full-Stack',
+    title: 'FooodBook-App',
+    description:
+      'social networking platform specifically designed for sharing images of restaurant dishes',
+    stack: [{ name: 'React' }, { name: 'NodeJs' }, { name: 'MongoDB' }],
+    image: foodbook,
+    live: 'https://foodbook.onrender.com/',
+    github: 'https://github.com/OrelAlon/foodbook-app',
   },
   {
     num: '02',
@@ -77,6 +79,9 @@ const Projects = () => {
               <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
                 {project.category}
               </h2>
+              <h4 className='text-[22px] font-bold leading-none group-hover:text-accent transition-all duration-500 capitalize text-accent'>
+                {project.title}
+              </h4>
               <p className='text-white/60'> {project.description}</p>
               <ul className='flex gap-4'>
                 {project.stack.map((item, index) => {
@@ -91,7 +96,7 @@ const Projects = () => {
               <div className='border border-white/20'></div>
               <div className='flex items-center gap-4'>
                 {/* live project */}
-                <Link href={project.live}>
+                <Link href={project.live} target='_blank'>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
@@ -106,7 +111,7 @@ const Projects = () => {
                 </Link>
                 {/* github project */}
 
-                <Link href={project.github}>
+                <Link href={project.github} target='_blank'>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
