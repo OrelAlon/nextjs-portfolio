@@ -16,9 +16,11 @@ import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import foodbook from '../../public/img/foodbook3.jpeg';
-import nut from '../../public/img/nut-app.png';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
+
+import foodbook from '../../public/img/foodbook3.jpeg';
+import game from '../../public/img/worldplay.png';
+import nut from '../../public/img/nut-app.png';
 
 const projects = [
   {
@@ -36,7 +38,8 @@ const projects = [
     num: '02',
     category: 'frontend',
     title: 'nutrition-tracking',
-    description: 'nutrition track of everything you ate',
+    description:
+      'A nutrition tracking app that logs everything you eat and provides recipes.',
     stack: [{ name: 'Html' }, { name: 'Css' }, { name: 'JavaScript' }],
     image: nut,
     live: 'https://nutrition-tracking-app.netlify.app/',
@@ -45,12 +48,12 @@ const projects = [
   {
     num: '03',
     category: 'frontend',
-    title: 'project 3',
-    description: 'sdxbn cehdcnsujcnasz cujhcn sujnxn jns',
+    title: 'Minecraft-2D-Game',
+    description: 'Minecraft game built entirely with pure vanilla JavaScript',
     stack: [{ name: 'Html' }, { name: 'Css' }, { name: 'JavaScript' }],
-    image: '/',
-    live: '',
-    github: '',
+    image: game,
+    live: 'https://cocky-dijkstra-a469d1.netlify.app/index.html',
+    github: 'https://github.com/OrelAlon/Minecraft-2D-Game',
   },
 ];
 const Projects = () => {
